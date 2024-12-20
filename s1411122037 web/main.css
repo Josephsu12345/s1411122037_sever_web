@@ -1,0 +1,77 @@
+/* 設定全頁背景與框架大小 */
+body {
+   
+}
+
+/* 框架 */
+.container-1{
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("landscape-1.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease-in-out;
+}
+
+/* 各標題區域 */
+.section {
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+    /* background-image: url("./basic.jpg");
+    background-size: 100px 50px; */
+   
+}
+
+.section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.section p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* 當滑鼠懸停時的效果 */
+
+ 
+.section:hover h1 {
+    transform: translateY(-10px);
+    color: #ffffff;
+    
+
+}
+
+.section:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 50%;
+    margin: 10px auto 0;
+    background-color: #fbff00;
+}
+/*.img-conversion{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000;
+   
+}*/
