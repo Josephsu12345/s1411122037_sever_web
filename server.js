@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 //web root
 server.use(express.static(__dirname));
 server.use(bodyParser.json());
-server.use(bodyParser.urlencoded());
+server.use(bodyParser.urlencoded({ extended: true }));
 
 var fileUpload = require("express-fileupload");
 server.use(fileUpload({defCharset:'utf8', defParamCharset:'utf8'}));
