@@ -3,6 +3,7 @@
 var express = require("express");
 var server = express();
 var bodyParser = require("body-parser");
+var path = require("path");
 
 //web root
 server.use(express.static(__dirname));
@@ -50,3 +51,7 @@ server.post("/contact_me", (req,res)=>{
 server.listen(4006, ()=>{
     console.log("Server is running at port 4006.");
 })
+server.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/main web.html'));
+  });
+  
