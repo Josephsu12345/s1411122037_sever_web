@@ -19,12 +19,12 @@ var ProfolioDB = DB.create(__dirname+"/profolio.db");
 var ContactDB = DB.create(__dirname+"/contact.db");
  
 
- ProfolioDB.insert([
+ /*ProfolioDB.insert([
     { modal: "card1", imgSrc: "worpage/house_白模.jpg", link:"3D d.html" ,title:"Japanese street", text: "Graphic Design" },
     { modal: "card2", imgSrc: "worpage/mclaren-2.jpg", link:"3D d.html" ,title:"Mclaren720s", text: "Graphic Design" },
     { modal: "card3", imgSrc: "worpage/素描.jpg", link:"Graphic design.html" ,title:"Arthur Fleck / Dwayne Johnson ", text: "Graphic Design" },
     { modal: "card4", imgSrc: "worpage/基設色彩調和_2-19201080.jpg", link:"Graphic design.html" ,title:"Graphic Design", text: "Graphic Design" },
- ])
+ ])*/
 
 server.get("/services", (req, res)=>{
     //DB find
